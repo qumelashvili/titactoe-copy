@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/vsplayerstyles.css">
+</head>
+
+<body>
+    <main class="main">
+
+        <section class="navigation">
+            <div class="XO-icons">
+                <img src="../assets/icon-x.svg" alt="">
+                <img src="../assets/icon-o.svg" alt="">
+            </div>
+            <div class="current-turn">
+                <img src="../assets/icon-x-gray.svg" class="current" alt="">
+                <p>TURN</p>
+            </div>
+            <div class="reset">
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+        </section>
+
+        <section class="tiles-container">
+            <div class="tiles" id="0"></div>
+            <div class="tiles" id="1"></div>
+            <div class="tiles" id="2"></div>
+            <div class="tiles" id="3"></div>
+            <div class="tiles" id="4"></div>
+            <div class="tiles" id="5"></div>
+            <div class="tiles" id="6"></div>
+            <div class="tiles" id="7"></div>
+            <div class="tiles" id="8"></div>
+        </section>
+
+        <section class="results">
+            <div class="score-box x-score">
+                <p>X </p><span class="player-x"></span>
+                <p class="score-x">0</p>
+            </div>
+            <div class="score-box ties">
+                <p>TIES</p>
+                <p class="ties-count">0</p>
+            </div>
+            <div class="score-box o-score">
+                <p>O </p><span class="player-o"></span>
+                <p class="score-o">0</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="message winner-message">
+        <p class="winner"></p>
+        <div>
+            <img class="icon" alt="" >
+            <p class="tied">TAKES THE ROUND</p>
+        </div>
+        <div>
+            <button class="btn quit" onclick="location.href='../index.html'">
+                QUIT
+            </button>
+            <button class="btn next">
+                NEXT ROUND
+            </button>
+        </div>
+    </div>
+
+    <div class="message restart-message">
+        <div>
+            <p>RESTART THE GAME?</p>
+        </div>
+        <div>
+            <button class="btn cancel">
+                NO, CANCEL
+            </button>
+            <button class="btn restart">
+                YES, RESTART
+            </button>
+        </div>
+    </div>
+
+<script src="https://kit.fontawesome.com/e329f9f909.js" crossorigin="anonymous"></script>
+<script src="../js/multiplayerscript.js"></script>
+</body> 
+</html>

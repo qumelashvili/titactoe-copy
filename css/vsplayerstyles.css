@@ -49,11 +49,11 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    max-width: 430px;
     margin-top: 60px;
 }
 .tiles{
-    width: 96px;
+    width: 93px;
     height: 96px;
     background: #1F3641;
     box-shadow: inset 0px -8px 0px #10212A;
@@ -146,11 +146,20 @@ main{
     width: 139px
 }
 
-@media screen and (min-width : 375px) {
+
+@media screen and (min-width: 768px) {
     .tiles{
         width: 140px;
+        height: 100px;
     }
+    .tiles-container{
+        max-width: 600px;
+    }
+    
 }
+
+
+
 
 
 
